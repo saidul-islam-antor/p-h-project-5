@@ -28,3 +28,5 @@ document.getElementById("btn6").addEventListener("click",
         alert("Board Updated Successfully")
 
 })
+
+

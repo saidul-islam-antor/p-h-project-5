@@ -6,9 +6,19 @@
         let button = document.getElementById(buttonId);
         
         clickedButtons++; 
+
+        // Date().toLocalTimeString();
+        // let log =document.createElement("p");
+        // log.textContent = `
+        // ${buttonId} ${time};
+        
+        // `
+        // history.appendChild(log);
+
+        
         
         if (clickedButtons === totalButtons) {
-            alert("All ok"); 
+            alert("congratulation!!! You have complate the task"); 
         }
     }
 
@@ -32,3 +42,28 @@
     document.getElementById("btn6").addEventListener("click", function () {
         handleClick("btn6");
    });
+
+
+
+//    change color
+
+    
+        const colors =['blue','green','yellow','purple','orange','pink'];
+        document.getElementById("colorBtn").addEventListener('click',function(){
+            const randomColor = colors[Math.floor(Math.random ()*colors.length)];
+            
+            document.body.style.backgroundColor = randomColor;
+        
+        });
+       
+        
+
+// current date
+function showCurrentDate(){
+    let today = new Date();
+    let options = {year:'numeric',month:'long', day: 'numeric'};
+    document.getElementById("current-date").innerText = today.toLocaleDateString("en-us",options);
+
+}
+
+showCurrentDate();
