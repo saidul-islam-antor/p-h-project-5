@@ -7,13 +7,7 @@
         
         clickedButtons++; 
 
-        // Date().toLocalTimeString();
-        // let log =document.createElement("p");
-        // log.textContent = `
-        // ${buttonId} ${time};
-        
-        // `
-        // history.appendChild(log);
+       
 
         
         
@@ -61,7 +55,7 @@
 // current date
 function showCurrentDate(){
     let today = new Date();
-    let options = {year:'numeric',month:'long', day: 'numeric'};
+    let options = {weekday:'long', year:'numeric',month:'long', day: 'numeric',};
     document.getElementById("current-date").innerText = today.toLocaleDateString("en-us",options);
 
 }
