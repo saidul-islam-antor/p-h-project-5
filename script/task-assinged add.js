@@ -1,27 +1,8 @@
-// document.getElementById("btn1").addEventListener("click",
-//     function () {
-//         const taskAssingned = document.getElementById("taskAssigned")
-//         const completedCount = document.getElementById("completedCount")
-//         const completeButtons = document.getElementById("btn1")
-//         for (i = 0, i < completeButtons.length; i++) {
-//             completeButtons[i].addEventListener('click', function () {
-//                 const assignedValue = parseInt(taskAssingned.textContent);
-//                 const completedValue = parseInt(completedCount.textContent);
-//                 if (assignedValue > 0) {
-//                     taskAssingned.textContent = assignedValue - 1;
-
-//                 }
-//                 else {
-//                     completedCount.textContent= completedValue+1;
-//                 }
-//             })
-//         }
-//     })
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let taskAssigned = document.getElementById("taskAssigned");
-    let completedCount = document.getElementById("completedCount");
+
+    const taskAssigned = document.getElementById("taskAssigned");
+    const completedCount = document.getElementById("completedCount");
 
     document.getElementById("btn1").addEventListener("click", function () {
         updateTask("btn1");
@@ -45,15 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateTask(buttonId) {
-        let assignedValue = parseInt(taskAssigned.textContent);
-        let completedValue = parseInt(completedCount.textContent);
+        const assignedValue = parseInt(taskAssigned.textContent);
+        const completedValue = parseInt(completedCount.textContent);
 
         if (assignedValue > 0) {
             taskAssigned.textContent = assignedValue - 1;
             completedCount.textContent = completedValue + 1;
-            
-            
-     
+
+
+
         }
-    }
-});
+    }

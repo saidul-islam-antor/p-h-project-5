@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backtopage</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-[#F4F7FF]">
+    <header class="  mt-14">
+        <section class="lg:mx-32  bg-white">
+            <nav class="flex justify-between">
+                <div class="flex space-x-2 ">
+                    <div>
+                        <img src="assets/logo.png" alt="">
+
+                    </div>
+                    <div class="">
+                        <h3 class="text-3xl  text-center">DevBoard</h3>
+                    </div>
+                </div>
+
+                <button id="backtodesk" class="btn btn-primary">Back to Desk</button>
+
+            </nav>
+        </section>
+    </header>
+
+    <section class="lg:mx-32 bg-white mt-5">
+        <div class="mt-3">
+            <h2 class="text-2xl font-bold ">
+                Question-1: What are the different ways to select an element in the DOM?
+            </h2>
+<hr>
+              <ol class="mt-2 text-xl">
+                <li>1.  document.getElementByTagName() </li>
+                <li>2.  document.getElementById()</li>
+                <li>3.  document.getElemetsByClassName()</li>
+                <li> 4.  document.getElementsBySelector()</li>
+                <li>  5.  document.getElementsBySelectorAll()</li>
+    
+              </ol>  
+            </section>
+       <section class="mt-3 lg:mx-32 bg-white">
+        <div class="">
+            <h2 class="text-2xl font-bold ">
+                Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </h2>
+<hr>
+
+<div class="text-xl">
+    
+    <ul>innerHTML:
+        <li> sets HTML content inside an element.</li>
+     </ul>
+<ul>innerText:
+<li>
+sets only the visible text inside an element.
+</li>
+</ul>
+<ul>textContent:
+<li>
+sets all text content, including hidden elements.
+</li>
+</ul>
+</div>
+        </div>
+       </section>
+   
+       <section class="mt-3 lg:mx-32 bg-white">
+        <div class="">
+            <h2 class="text-2xl font-bold ">
+                Question-3: What is event delegation in the DOM?
+            </h2>
+<hr>
+<p class="text-xl">Event delegation in the DOM is a technique where a parent element listens for events on its child elements, even if those child elements are dynamically added later.</p>
+</section>
+
+<section class="mt-3 lg:mx-32 bg-white">
+    <div class="">
+        <h2 class="text-2xl font-bold ">
+            Question-4: What is event bubbling in the DOM?
+        </h2>
+<hr>
+
+<p class="text-xl">Event bubbling in the DOM (Document Object Model) is a mechanism where an event that occurs on a nested element first triggers on that element and then propagates upward to its parent elements.</p>
+</section>
+<section class="mt-3 lg:mx-32 bg-white">
+    <div class="">
+        <h2 class="text-2xl font-bold ">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+        </h2>
+<hr>
+
+<ul class="font-semibold">creatElement:
+    <li class="font-normal"> et newDiv = document.createElement("div");  
+        newDiv.textContent = "Hello, World!";   </li>
+</ul>
+<ul class="font-semibold"> AddElement:
+    <li class="font-normal">document.body.appendChild(newDiv);</li>
+</ul>
+
+<ul class="font-semibold">removeElement:
+    <li class="font-normal"> document.body.removeChild(newDiv); </li>
+</ul>
+</section>
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById("backtodesk")
+            .addEventListener('click', function () {
+                window.location.href = "./index.html"
+
+            })
+    </script>
+</body>
+
+</html>
